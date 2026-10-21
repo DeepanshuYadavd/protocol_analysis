@@ -1,10 +1,12 @@
 import DashboardIcon from "@mui/icons-material/Dashboard";
+import CorporateFareIcon from "@mui/icons-material/CorporateFare";
+import CategoryIcon from "@mui/icons-material/Category";
+import AssessmentIcon from "@mui/icons-material/Assessment";
 import HowToRegIcon from "@mui/icons-material/HowToReg";
 import LoginIcon from "@mui/icons-material/Login";
-import CorporateFareIcon from "@mui/icons-material/CorporateFare";
 export const GetNavigation = () => [
   {
-    segment: "dashboard",
+    segment: "",
     title: "Dashboard",
     icon: <DashboardIcon />,
   },
@@ -13,7 +15,16 @@ export const GetNavigation = () => [
     title: "Organization",
     icon: <CorporateFareIcon />,
   },
-
+  {
+    segment: "products",
+    title: "Products",
+    icon: <CategoryIcon />,
+  },
+  {
+    segment: "reports",
+    title: "Reports",
+    icon: <AssessmentIcon />,
+  },
   {
     kind: "divider",
   },
